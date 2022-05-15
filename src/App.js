@@ -72,8 +72,8 @@ function App() {
           <Route path='/donate' component={Donate} />
           <Route path='/volunteer' component={Volunt} />
           <Route path='/Shop' component={Prod} />
-          <Route path='/contact' component={ContactUs} />
           <Route path='/about' component={AboutUs} />
+          <Route path='/contact' component={ContactUs} />
       </Switch>
       {/* <Switch>
           <Route exact path="/">
