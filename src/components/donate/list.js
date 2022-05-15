@@ -1,5 +1,5 @@
 import React from "react";
-
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Dialog
 
 import Button from '@material-ui/core/Button';
@@ -87,7 +87,7 @@ export default function Donate() {
               <br/>
               <div > 
               <Button variant="outlined" onClick={handleClickOpen} className={classes.btn}>
-        >>>
+        more
       </Button> </div>
       <Dialog
         open={open}
@@ -112,7 +112,11 @@ Alongwith academics, Parkshala also focuses on value education and character-bui
           </DialogContentText>
         </DialogContent>
         <DialogActions className={classes.but}>
-          <Button onClick={handleClose} className={classes.btn1}>Vist</Button>
+        {/* <link to="https://www.parkshala.com/"></link>           */}
+        <div>
+          
+          <Button className={classes.btn1} href="https://www.parkshala.com/">Vist</Button>
+        </div>
           <Button onClick={handleClose} autoFocus className={classes.btn1}>
             Donate
           </Button>
@@ -136,7 +140,7 @@ Alongwith academics, Parkshala also focuses on value education and character-bui
               <br/>
               <div > 
               <Button variant="outlined" onClick={handleClickOpen} className={classes.btn}>
-        >>>
+        more
       </Button> </div>
       <Dialog
         open={open}
@@ -188,7 +192,7 @@ Work as a catalyst in bringing sustainable change in the lives of underprivilege
               <br/>
               <div > 
               <Button variant="outlined" onClick={handleClickOpen} className={classes.btn}>
-        >>>
+        more
       </Button> </div>
       <Dialog
         open={open}
@@ -239,7 +243,7 @@ Alongwith academics, Parkshala also focuses on value education and character-bui
               <br/>
               <div > 
               <Button variant="outlined" onClick={handleClickOpen} className={classes.btn}>
-        >>>
+        more
       </Button> </div>
       <Dialog
         open={open}
@@ -290,7 +294,7 @@ Alongwith academics, Parkshala also focuses on value education and character-bui
               <br/>
               <div > 
               <Button variant="outlined" onClick={handleClickOpen} className={classes.btn}>
-        >>>
+        more
       </Button> </div>
       <Dialog
         open={open}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Contact</title>
+</head>
+<body class="body">
+
+ <!-- <style>
+
+    .body{
+        
+    }
+
+    #box{
+    border-radius: 5px;
+            color: black;
+            font-size: 20px;
+            background-color: #65fc62 ;
+            margin: auto;
+            width: 500px;
+            padding: 20px;
+
+            text-shadow: 1px 1px 1px black;
+
+ 
+    background-image: linear-gradient(to top right,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    }
+
+        #sub{
+            color: white;
+            background-color: #f77800;
+      border-radius: 5px;
+       border: 2px solid #f7e300; 
+     border-radius: 5px;
+     color: white;
+     font-size: 20px;
+     padding: 10px 22px;
+        text-decoration: none;
+        }
+</style> -->
+
+
+<div id="box" class="my-4">
+
+<div class="container my-4">
+    <h1 class="text-center">Donate</h1>
+    <br>
+    <!-- <h5 class="text-center">Elaborate your concern</h5> -->
+    <br>
+    <!-- <center> -->
+    <form method="post">
+  <div class="form group">
+    <label for="fullname" class="form-label ">Name</label>
+    <input type="text" class="form-control" placeholder="Full name" id="fullname" name="fullname" aria-describedby="emailHelp" required>
+</div>
+<br>
+<div class="form group">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" placeholder="example@gmail.com" name="email" required>
+    
+</div>
+<br>
+<div class="form group">
+        <label for="contact" class="form-label ">Contact</label>
+        <input type="int" class="form-control mb-2" placeholder="+91 98xxxxxxxx"  id="contact" name="contact" aria-describedby="emailHelp" required>
+    </div>
+<br>
+<div class="form group">
+        <label for="address" class="form-label">Address</label>
+        <input type="address" class="form-control mb-2" placeholder="Address"  id="address" name="address"  aria-describedby="emailHelp" required>
+    </div>
+<br>
+<br>
+  <center><button id="sub" type="submit" >Sumit</button></center>
+<br>
+</form>
+
+</div>
+</div>
+
+
+</body>
+</html>
