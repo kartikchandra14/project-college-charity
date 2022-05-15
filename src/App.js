@@ -29,6 +29,7 @@ import { Shop } from '@material-ui/icons';
 import { List } from '@material-ui/core';
 import volunt from './components/volunteer/Volunteer.js';
 import list from './components/donate/list.js';
+import Login from './components/Login/login.js';
 
 const useStyles = makeStyles(styles);
 
@@ -74,6 +75,7 @@ function App() {
           <Route path='/Shop' component={Prod} />
           <Route path='/about' component={AboutUs} />
           <Route path='/contact' component={ContactUs} />
+          <Route path='/login' component={Login} />
       </Switch>
       {/* <Switch>
           <Route exact path="/">
