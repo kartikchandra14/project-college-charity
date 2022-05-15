@@ -48,7 +48,7 @@ export default function HeaderLinks(props) {
       activeTab(location.pathname?.split("/")[1])
     }
     else{
-      activeTab("home")
+      activeTab("home");
     }
   })
 
@@ -156,19 +156,35 @@ export default function HeaderLinks(props) {
         </Button>
       </Link>
       </ListItem>
-      <ListItem className={classes.listItem}>
-      <Link to={'/login'} onClick={ () => activeTab("contact")} 
-      className={classNames(classes.aDefaultRemove)} >
-        <Button
-          color="transparent"
-          className={classes.navLink}
-        >
+      {
+        !(localStorage.getItem('token'))  ? 
+        <ListItem className={classes.listItem}>
+        <Link to={'/login'} onClick={ () => activeTab("contact")} 
+          className={classNames(classes.aDefaultRemove)} >
+          <Button
+            color="transparent"
+            className={classes.navLink}
+          >
           <span className={classNames(  activeTabValue == 'login' ? classes.aDefaultDesign  : '' )}>
             Login
           </span>
-        </Button>
-      </Link>
-      </ListItem>
+          </Button>
+        </Link>
+        </ListItem> :
+        <ListItem className={classes.listItem}>
+        <Link to={'/home'} onClick={ () => activeTab("home")} 
+          className={classNames(classes.aDefaultRemove)} >
+          <Button
+            color="transparent"
+            className={classes.navLink}
+          >
+          <span className={classNames(  activeTabValue == 'logout' ? classes.aDefaultDesign  : '' )}>
+            Logout
+          </span>
+          </Button>
+        </Link>
+        </ListItem>
+      }
     </List>
   );
 }

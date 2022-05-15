@@ -30,6 +30,7 @@ import { List } from '@material-ui/core';
 import volunt from './components/volunteer/Volunteer.js';
 import list from './components/donate/list.js';
 import Login from './components/Login/login.js';
+import Signup from './components/SignUp/signup.js';
 
 const useStyles = makeStyles(styles);
 
@@ -76,6 +77,7 @@ function App() {
           <Route path='/about' component={AboutUs} />
           <Route path='/contact' component={ContactUs} />
           <Route path='/login' component={Login} />
+          <Route path='/signup' component={Signup} />
       </Switch>
       {/* <Switch>
           <Route exact path="/">

@@ -46,6 +46,7 @@ export class AuthController {
 				}
 				// check email is valid
 				let user: any = await User.findOne({ email: email });
+				console.log("login", user);
 				if (!user){
 					return _RS.unauthorized(res,'Invalid email address.')
 				}

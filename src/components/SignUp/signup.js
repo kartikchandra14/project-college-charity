@@ -7,16 +7,15 @@ import axios from 'axios';
 import AlertComponent from '../AlertComponent/AlertComponent';  
 
 import {ReactComponent as Logo} from '../../assets/instagram.svg'
-import HeaderLinks from "../Header/HeaderLinks"
+import './signup.css';
 import { BrowserRouter as Link  } from 'react-router-dom';
-
-import './login.css';
 
 import { makeStyles } from "@material-ui/core/styles";
 import styles from "../../assets/jss/material-kit-react/views/componentsSections/basicsStyle.js";
 const useStyles = makeStyles(styles);
 
-export default function Login(props) {
+
+export default function Signup(props) {
     const classes = useStyles();
 // 
 const [state , setState] = useState({
@@ -25,15 +24,14 @@ const [state , setState] = useState({
 })
 
 const [errorMessage, updateErrorMessage] = useState(null);
-const [token, setToken] = useState(null);
-const [signUpState , setSignUpState] = useState(null);
+
 const redirectToHome = () => {
-    // props.updateTitle('Home')
+    props.updateTitle('Home')
     props.history.push('/home');
 }
-const redirectToSignup = () => {
-    // props.updateTitle('Signup')
-    props.history.push('/signup'); 
+const redirectToLogin = () => {
+    // props.updateTitle('Login')
+    props.history.push('/login'); 
 }
 const handleChange = (e) => {
     const {id , value} = e.target;
@@ -47,22 +45,14 @@ const handleChange = (e) => {
 
 const handleSubmitClick = (e) => {
     e.preventDefault();
-    console.log("handleSubmitClick", e, state, state.password, state.confirmPassword, props);
-    if(state.password && state?.email) {
+    // console.log("handleSubmitClick", e, state, state.password, state.confirmPassword, props);
+    if(state.password && state?.email){
         sendDetailsToServer();
     }
     else{
         // props.showError('Email or Passwords not found.');
         alert("Email or Passwords not found.");
     }
-}
-
-const moveToSignUp = (event) => {
-    event.preventDefault();
-    setSignUpState(prevState => ({
-        ...prevState,
-        signUpState : true
-    }));
 }
 
 const sendDetailsToServer = () => {
@@ -72,34 +62,25 @@ const sendDetailsToServer = () => {
             "email":state.email,
             "password":state.password,
         }
-        axios.post(API_BASE_URL+'auth/login', payload)
+        axios.post(API_BASE_URL+'auth/signup', payload)
             .then(function (response) {
-                if(response.status === 200){
+                if(response.status === 201){
+                    alert("User created success. You can login now.");
                     // setState(prevState => ({
-                        //     ...prevState,
-                        //     'successMessage' : 'Registration successful. Redirecting to home page..'
-                        // }))
-                        console.log("sendDetailsToServer_2", response, response?.data?.jwt_token);
-                        if(response?.data?.data?.jwt_token){
-                            localStorage.setItem("token", JSON.stringify(response?.data?.data?.jwt_token));
-                            setToken(prevState => ({
-                                ...prevState,
-                                token : response?.data?.jwt_token
-                            }));
-                        }
-                        // alert("User logged in");
+                    //     ...prevState,
+                    //     'successMessage' : 'Registration successful. Redirecting to home page..'
+                    // }))
                     redirectToHome();
                     // props.showError(null)
-                } 
-                else{
+                } else{
                     // props.showError("Some error ocurred");
-                    if(response.status == 401){
-                        alert(`${response.message}`);
-                    }
                 }
             })
             .catch(function (error) {
-                console.log(error);
+                console.log("sendDetailsToServer_error", error);
+                if(error?.response?.data?.status == 409 && error?.response?.data?.message == "Email already exists" ){
+                    alert("Email already exists");
+                }
             });    
     } else {
         props.showError('Please enter valid username and password')    
@@ -110,7 +91,7 @@ const sendDetailsToServer = () => {
     return (
       <div className={classes.sections}>
         <div className={classes.container}>
-          Login
+          Sign Up
         </div>
         <div className='div-login'>
                  <div className='div-login-logo'>
@@ -121,21 +102,19 @@ const sendDetailsToServer = () => {
                          <input type='email' id='email' name='email' placeholder='email...' required onChange={handleChange}/>
                          <input type='password' id='password' name='pwd' placeholder='password...' required onChange={handleChange}/>
                          <button onClick={handleSubmitClick}>
-                             Log In
+                            Sign Up
                          </button>
                      </form>
                  </div>
                  <div>
-                     <Link to={'/signup'}>
-                        <button onClick={redirectToSignup}> 
-                        {/* moveToSignUp */}
-                             Create an account
+                     <Link to={'/login'}>
+                        <button onClick={redirectToLogin}> 
+                             Log In
                         </button>
                      </Link>
                  </div>
         </div>
         {/* <AlertComponent errorMessage={errorMessage} hideError={updateErrorMessage} showError={updateErrorMessage} /> */}
-        <HeaderLinks token={setToken}></HeaderLinks>
       </div>
     );
 }
