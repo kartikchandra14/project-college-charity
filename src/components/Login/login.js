@@ -81,7 +81,7 @@ const sendDetailsToServer = () => {
                         // }))
                         console.log("sendDetailsToServer_2", response, response?.data?.jwt_token);
                         if(response?.data?.data?.jwt_token){
-                            localStorage.setItem("token", JSON.stringify(response?.data?.data?.jwt_token));
+                            localStorage.setItem("token", response?.data?.data?.jwt_token);
                             setToken(prevState => ({
                                 ...prevState,
                                 token : response?.data?.jwt_token
