@@ -3,7 +3,7 @@ import { container, title } from "../../../material-kit-react.js";
 import customCheckboxRadioSwitch from "../../customCheckboxRadioSwitch.js";
 
 
-const shopStyle = {
+const basicStyle = {
     sections: {
       padding: "70px 0",
     },
@@ -80,4 +80,4 @@ topleft: {
   ...customCheckboxRadioSwitch,
 };
 
-export default shopStyle;
+export default basicStyle;

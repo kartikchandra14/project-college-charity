@@ -43,7 +43,9 @@ const basicsStyle = {
 },
   colorcard:{
     color: "white",
-    fontSize: "50px"
+    fontSize: "50px",
+    textAlign: "right",
+    paddingLeft:"10px"
 },
   spam:{
     paddingTop:"20px",
@@ -51,6 +53,7 @@ const basicsStyle = {
     fontSize: "15px"
 },
   listbg:{
+
     borderRadius: "10px",
     backgroundColor: "#15104f",
     paddingBottom: "5px",
@@ -66,8 +69,8 @@ const basicsStyle = {
 web:{
   borderRadius: "10px",
   height: "150px",
-  width: "250px",
-  padding: "5px",
+  width: "350px",
+  
 },
 
 btn:{
@@ -88,7 +91,7 @@ btn1:{
   marginRight: "20px",
   paddingRight: "15px",
   paddingLeft: "15px",
-  backgroundColor: "black",
+  backgroundColor: "#18a808",
   color: "white",
   
 
@@ -104,7 +107,7 @@ readmore:{
 },
 
 desc:{
-  color: "white",
+  BackgroundColor: "white",
   fontSize: "20px"
 },
 
