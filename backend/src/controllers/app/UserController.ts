@@ -10,15 +10,7 @@ import * as mongoose from "mongoose";
 
 export class UserController {
     
-    /**
-    * @api {delete} /app/user/delete-account Delete Account
-    * @apiVersion 1.0.0 
-    * @apiGroup User Profile & Settings
-    * @apiHeader {String} Authorization Pass jwt token.  
-    * @apiSuccessExample {json} Success-Response:
-    * {"status":200,"message":"Account deleted successfully.","data":{}}
-    **/
-   
+
     static async deleteAccount(req,res){
         try{
             let user=await User.findOne({_id:req.data._id});
@@ -155,7 +147,7 @@ export class UserController {
 		}
 	}
 
-    //  for Web ==> User Profile Page 
+
     static async getUsersDetailByUserId(req,res){
 		try{ 
             console.log("getUsersDetailWithId_1", req.params.user_id)
@@ -184,7 +176,7 @@ export class UserController {
 		}
 	}
 
-    // update user for web ==> step 2 at first time sign up
+
     static async updateUserDetails(req, res){
 		try{
             console.log("updateUserDetails", req.body);

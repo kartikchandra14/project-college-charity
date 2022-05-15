@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "22fc39db-02ec-459d-ab7d-9c1f136b65ca",
+		"name": "Architecture for Backend API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "SIGN UP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"chandra.kartik01@gmail.com\",\n    \"password\":\"password@M1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/app/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"app",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LOGIN",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"chandra.kartik01@gmail.com\",\n    \"password\":\"password@M1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/app/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"app",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LOGOUT",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact Us",
+			"item": [
+				{
+					"name": "Contact Us",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjgwZmVkN2VkY2Y3MDgzYzIzNWEyODEiLCJlbWFpbCI6ImNoYW5kcmEua2FydGlrMDFAZ21haWwuY29tIiwiaWF0IjoxNjUyNjIxMTA1LCJleHAiOjE2NTM4MzA3MDV9.FHX5pOpfDKHbPLOqqmqLJuYaG2MfksNBxbD6iqkbaaE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"kartik\",\n    \"email\": \"chandra.kartik@gmail.com\",\n    \"message\" :\"taken message\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/app/contact",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"app",
+								"contact"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Volunteer",
+			"item": [
+				{
+					"name": "Volunteer form",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjgwZmVkN2VkY2Y3MDgzYzIzNWEyODEiLCJlbWFpbCI6ImNoYW5kcmEua2FydGlrMDFAZ21haWwuY29tIiwiaWF0IjoxNjUyNjIxMTA1LCJleHAiOjE2NTM4MzA3MDV9.FHX5pOpfDKHbPLOqqmqLJuYaG2MfksNBxbD6iqkbaaE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"kartik\",\n    \"email\": \"chandra.kartik@gmail.com\",\n    \"address\":\"Dwaraka sector 4, Delhi -110099\",\n    \"contactNumber\":\"9716693837\",\n    \"age\" :60,\n    \"voluteerForDays\": \"30\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/app/volunteer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"app",
+								"volunteer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -3,7 +3,6 @@ import * as Jwt from 'jsonwebtoken';
 import User from '../models/User';
 import _RS from '../services/ResponseService';
 import { GlobalHelper } from '../helpers/GlobalHelper';
-import sendGrid from '../services/sendGridMailService';
 
 export class AuthMiddleWare {  
     static token;
@@ -27,40 +26,17 @@ export class AuthMiddleWare {
     static async checkUser(req,res,next){
         let user:any=await User.findOne({
             $or:[
-                { email:req.body.email},
-                // { email:req.body.email,account_status:{$ne:'PENDING'}},
-                // { country_code:req.body.country_code,account_status:{$ne:'PENDING'}}
+                { email: req.body.email},
             ]
         });
         
         if(user && user.email==req.body.email.toLowerCase() ){
-            // return _RS.existConflict(res,'Email already exists',{});
-
-        if(user && user.is_account_active==false && user.account_status == "SUSPENDED"){
-                return _RS.unauthorized(res,'Your account is suspended.',{});
-        }            
-        if(user && user.is_account_active == false ){
-            let jwt_token = await GlobalHelper.generateJwtToken({ _id: user._id, email: user.email }, "15m" ,user?.password);
-
-            const resOfMail = await sendGrid.sendResetPasswordLink(user.email, jwt_token, user.nick_name, 'user');
-            if(resOfMail){
-                return _RS.unauthorized(res,'Your account has been locked. Please reset your password to login again.',{mailSent : true});
-            }
-            else{
-                return _RS.unauthorized(res,'Your account has been locked. Please reset your password to login again.',{mailSent : false});
-            }
-        }
-        // if(user && user.email==req.body.email.toLowerCase() ){
-        //     return _RS.existConflict(res,'Email already exists',{});
-        // }
-        // else if(user && user.phone_number==req.body.phone_number){
-        //     return _RS.existConflict(res,'Phone number already exists.',{});
-        // }
-        // else
+            return _RS.existConflict(res,'Email already exists',{});
             next();
         }
         else{
-            return _RS.notFound(res,'User not found..',{});
+            // return _RS.notFound(res,'User not found..',{});
+            next();
         }
         // else
             // next();

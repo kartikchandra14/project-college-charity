@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { UserController } from "../../controllers/app/UserController";
+import { VolunteerController } from "../../controllers/app/Volunteer";
 import { AuthMiddleWare } from "../../middleware/AuthMiddleware";
 
-export class UserRouter {
+export class VolunteerRouter {
     public router: Router;
     constructor() {
         this.router = Router();
@@ -16,16 +16,15 @@ export class UserRouter {
     }
 
     postRoutes(){
+        this.router.post('/',AuthMiddleWare.authenticate, VolunteerController?.addVolunteerData);
     }
     
     patchRoutes() {
-        this.router.patch('/',AuthMiddleWare.authenticate, UserController.updateUserDetails);
     }
 
     putRoutes() {
     }
     deleteRoutes() {
-        this.router.delete('/delete-account',AuthMiddleWare.authenticate,UserController.deleteAccount)
     }
 }
-export default new UserRouter().router;
+export default new VolunteerRouter().router;
