@@ -11,6 +11,7 @@ const basicsStyle = {
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none",
+   
   },
   space50: {
     height: "50px",
@@ -115,3 +116,18 @@ desc:{
   };
 
 export default basicsStyle;
+// body{
+//   background: #55ffe5;
+//   font-size: 14px;
+// .container{
+//   width: 80%;
+//   margin: 50px auto;
+// 7.contact-box{
+//   background: #fff;
+//   display: flex;
+// .contact-left{
+//   flex-basis: 60%;
+//   padding: 40px 60px;
+// .contact-right{
+//   flex-basis: 40%;
+//   padding: 40px:

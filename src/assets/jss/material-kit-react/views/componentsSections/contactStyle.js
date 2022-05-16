@@ -11,7 +11,6 @@ const basicsStyle = {
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none",
-    
   },
   space50: {
     height: "50px",
@@ -21,48 +20,12 @@ const basicsStyle = {
     height: "70px",
     display: "block",
   },
-  icons: {
-    width: "17px",
-    height: "17px",
-    color: "#FFFFFF",
-  },
   displayFlex:{
     display: "flex",
   },
-  paddingall:{
-    padding:"auto"
-  },
-  marginall:{
-    marginRight: "5px",
-    marginLeft: "5px"
-  },
+
   texthome:{
     textAlign: "center"
-  },
-  gallerybg:{
-    backgroundColor: "#c9eaff",
-    padding: "10px",
-    boxShadow: "5px 10px 10px #888888"
-  },
-  card: {
-    width:"370px",
-    height:"100%",
-    backgroundColor: "#730511"
-  },
-  card1: {
-    width:"370px",
-    height:"480px",
-    backgroundColor: "#464547"
-  },
-  typo: {
-    fontSize: "18px",
-    color: "white"
-  },
-  typo1: {
-    fontSize: "21px",
-    backgroundColor: "#9e9e9e",
-    color: "Black",
-    textAlign:"center"
   },
   box:{
     color:"Black",
@@ -72,7 +35,7 @@ const basicsStyle = {
     position: "relative",
     left: "28%",
     width: "500px",
-    height: "400px",
+    height: "500px",
     fontSize: "20px",
 
   },
@@ -82,10 +45,9 @@ const basicsStyle = {
       padding: "40px 60px",
   },
   contact_right:{
-    fontSize: "18px",
        flexBasis: "40%",
        padding: "40px",
-      backgroundColor: "#780a69",
+      backgroundColor: "#021396",
       color: "#fff"
   },
   mssg: {
@@ -100,7 +62,25 @@ const basicsStyle = {
     backgroundColor: "#021396",
   },
 
-    ...customCheckboxRadioSwitch,
-  };
+    
+  
+  ...customCheckboxRadioSwitch,
+};
 
 export default basicsStyle;
+
+// -body{
+//   background: #55ffe5;
+//   font-size: 14px;
+//   font-family: 'Poppins', sans-serif;
+// .container{
+//   width: 80%;
+//   margin: 50px auto;
+// .contact-box{
+//   background: #fff;
+//   display: flex;
+// .contact-left{
+//   flex-basis: 60%;
+//   padding: 40px 60px;
+// 7.contact-right{
+//    flex-basis: 40%;

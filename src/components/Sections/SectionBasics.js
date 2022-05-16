@@ -5,7 +5,7 @@ import React from "react";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
+// import stuff from "../../assets/components/donate/stuff.js";
 // core components
 // import GridContainer from "components/Grid/GridContainer.js";
 // import GridItem from "components/Grid/GridItem.js";
@@ -48,51 +48,51 @@ export default function SectionBasics() {
 
   const itemData = [
     {
-      img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ9sv6mBY8zX-0dXOa670JG4R9vh1Nh9QjVNH9gVePNKduVRgNVyaj6auppvBse9Td0A8&usqp=CAU',
       title: 'Breakfast',
     },
     {
-      img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+      img: 'https://ak.picdn.net/shutterstock/videos/5074706/thumb/1.jpg',
       title: 'Burger',
     },
     {
-      img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+      img: 'https://static.toiimg.com/thumb/msid-77028037,width-1200,height-900,resizemode-4/.jpg',
       title: 'Camera',
     },
     {
-      img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+      img: 'https://static.toiimg.com/thumb/msid-70186418,width-1200,height-900,resizemode-4/.jpg',
       title: 'Coffee',
     },
     {
-      img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+      img: 'https://oi-files-d8-prod.s3.eu-west-2.amazonaws.com/s3fs-public/styles/hero_image_extra_large/public/ogb_115272_india_chhatiya_main_picture.jpg?itok=5ioCgsJD',
       title: 'Hats',
     },
     {
-      img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+      img: 'https://www.livemint.com/rf/Image-621x414/LiveMint/Period1/2013/07/25/Photos/poverty_2--621x414.jpg',
       title: 'Honey',
     },
     {
-      img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+      img: 'https://www.financialexpress.com/wp-content/uploads/2018/06/poverty-1.jpg',
       title: 'Basketball',
     },
     {
-      img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
+      img: 'https://thumbnails.yayimages.com/1600/0/4c2/4c2ff2.jpg',
       title: 'Fern',
     },
     {
-      img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
+      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdh52yoEllZNvfq74sABED42YYhPHEjYzRfw&usqp=CAU',
       title: 'Mushrooms',
     },
     {
-      img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
+      img: 'https://www.soschildrensvillages.ca/sites/default/files/mother-child-chinnakalepet-india-18091-800x533.jpg',
       title: 'Tomato basil',
     },
     {
-      img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
+      img: 'http://1.bp.blogspot.com/-HNmEFyCmfbQ/T0Pe6ucROjI/AAAAAAAAAA4/xcxEtEA9cdY/s1600/poor-people-India-school-girl.jpg',
       title: 'Sea star',
     },
     {
-      img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
+      img: 'https://static2.bigstockphoto.com/5/3/2/large1500/235411654.jpg',
       title: 'Bike',
     },
   ];
@@ -110,6 +110,78 @@ export default function SectionBasics() {
          HOME page
         </h2>
       </div>
+      <br/>
+      <br/>
+      <h2  className={classes.texthome}>Why Support NGOs</h2>
+<br/>
+      <div className={classNames(classes.container, classes.displayFlex,)}>
+        <div className={( classes.marginall)}>
+          
+         <Card className={classes.card}>
+      <CardMedia
+        component="img"
+        height="140"
+        image={require("../../assets/img/home/21.jpg").default}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          
+        </Typography>
+        <Typography variant="body2"  className={classes.typo}>
+        NGOs have been a crucial part in the working of a country.We make it easier for people to donate for the people in need.
+        <br/>Our website here is going to help the unforunate in their time of need with the help of your donations.
+        </Typography>
+      </CardContent>
+      <CardActions>
+      </CardActions>
+    </Card>
+    </div>
+    <div className={( classes.marginall)}>
+    <Card className={classes.card}>
+      <CardMedia
+        component="img"
+        height="140"
+        image={require("../../assets/img/home/20.jpg").default}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+         
+        </Typography>
+        <Typography variant="body2"  className={classes.typo}>
+        The more you donate the more smiles you see.spread smiles not sorrows.<br/>There are children who have never been able to play with toys so with any kind of donations you spread happiness to all children.
+        </Typography>
+      </CardContent>
+      <CardActions>
+      </CardActions>
+    </Card>
+    </div>        
+    <div className={( classes.marginall)}>
+     <Card className={classes.card}>
+      <CardMedia
+        component="img"
+        height="140"
+        image={require("../../assets/img/home/22.jpg").default}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          
+        </Typography>
+        <Typography variant="body2"  className={classes.typo}>
+        Donate to make someone else's furture.<br/>Let's make living together easier.We will plant a tree each and everytime you make a Donation in any of the NGO.
+        </Typography>
+      </CardContent>
+      <CardActions>
+      </CardActions>
+    </Card>    
+      
+      </div>
+      </div>
+ 
+
+      <br/>
       <br/>
       <br/>
       <br/>
@@ -134,6 +206,73 @@ export default function SectionBasics() {
       <br/>
       <br/>
 
+      <br/>
+      <br/>
+      <br/>
+
+
+<div>
+
+<div className={classes.sections}>
+    <div className={classes.texthome}>
+      <h2>
+        Donation Alert !
+        </h2>
+      </div>
+        <br/>
+        <br/>
+        <br/>
+
+        <div class={classes.container}>
+<hl></hl>
+<div class={classes.displayFlex}>
+<div class={classes.contact_left}>
+  <h3>Recycle Time</h3>
+<form>
+
+  <div class="input-row">
+<div class="input-group">
+     <label>Name</label>
+     <input type="text" placeholder="John Amendo"/>
+</div>
+<br/>
+<div class="input-group">
+     <label>email</label>
+     <input type="email" placeholder="john@abc.com"/>
+     </div>
+     <br/>
+<div class="input-group">
+     <label>Contact number</label>
+     <input type="int" placeholder="9999-xxx-yyy"/>
+</div>
+<br/>
+
+<div class="input-group">
+     <label>Address</label>
+     <input type="varchar" placeholder="chawdi baazar"/>
+</div>
+
+<br/>
+
+<button className={classes.btn} type="submit">Send</button>
+</div>
+</form>
+
+</div>
+<div class={classes.contact_right}>
+  <h3>Time to Donate some Stuff!</h3>
+<p>Sometimes "people" have something stored in their home which is useless for them but can be reuse like Clothes, shoes, Blankets and etc. they don't know what to do with them, In case you are those "people" this Section is for you here you can donate those stuff while sitting in your home. You just need to click on the Donate button given below and fill the information like your Email, Contact Number, Address(where to collect goods) and etc. <br/>
+Our Volunteer will collect them for you and delivered them to an NGO that need it.</p> <br/>
+
+
+</div>
+</div>
+</div>
+      </div>
+
+
+</div>
+
 
 {/* why do charity? */}
 
@@ -142,20 +281,19 @@ export default function SectionBasics() {
       <div className={classNames(classes.container, classes.displayFlex,)}>
         <div className={( classes.marginall)}>
           
-         <Card sx={{ maxWidth: 250 }}>
+         <Card className={classes.card1}>
       <CardMedia
         component="img"
         height="140"
-        image={require("../../assets/img/banner2.jpg").default}
+        image={require("../../assets/img/home/elon.jpg").default}
         alt="green iguana"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
+        <Typography gutterBottom variant="h5" component="div" className={classes.typo1}>
+          Bheem
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+        <Typography variant="body2"  className={classes.typo}>
+        After having the opportunity to work with the Seruds team and Mr.Mallikarjuna, I would like to express what a great job they are doing. From the orphanage to the mid day meals to the old age persons, the Seruds team is definitely a blessing for the people of Kurnool. I wish the team all the best and success in their future endeavours.
         </Typography>
       </CardContent>
       <CardActions>
@@ -163,40 +301,38 @@ export default function SectionBasics() {
     </Card>
     </div>
     <div className={( classes.marginall)}>
-    <Card sx={{ maxWidth: 250 }}>
+    <Card className={classes.card1}>
       <CardMedia
         component="img"
         height="140"
-        image={require("../../assets/img/banner2.jpg").default}
+        image={require("../../assets/img/home/elon.jpg").default}
         alt="green iguana"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
+        <Typography gutterBottom variant="h5" component="div" className={classes.typo1}>
+          Indumati
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+        <Typography variant="body2"  className={classes.typo}>
+        It has always been pleasure to work with SERUDS. I have been working with SERUDS from past 2 years and I can tell that Mr.Mallikarjuna has dedication towards his work and tries to help the society in best possible way. Be it children,or women, Mr Mallikarjuna aims to help them in best possible way.
         </Typography>
       </CardContent>
       <CardActions>
       </CardActions>
     </Card>
     </div>        
-     <Card sx={{ maxWidth: 250 }}>
+     <Card className={classes.card1}>
       <CardMedia
         component="img"
         height="140"
-        image={require("../../assets/img/banner2.jpg").default}
+        image={require("../../assets/img/home/elon.jpg").default}
         alt="green iguana"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
+        <Typography gutterBottom variant="h5" component="div" className={classes.typo1}>
+          Raju
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+        <Typography variant="body2" className={classes.typo}>
+        It was pleasure thing for me to work for SERUDS to generate funds and managing social media, NGO is growing rapidly and the profit of this growth can be seen on orphanage where they help. women empowerment where they support every women. midday meal programs organized by NGO.
         </Typography>
       </CardContent>
       <CardActions>

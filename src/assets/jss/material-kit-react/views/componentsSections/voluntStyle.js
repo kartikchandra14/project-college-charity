@@ -11,7 +11,6 @@ const basicsStyle = {
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none",
-   
   },
   space50: {
     height: "50px",
@@ -21,11 +20,6 @@ const basicsStyle = {
     height: "70px",
     display: "block",
   },
-  icons: {
-    width: "17px",
-    height: "17px",
-    color: "#FFFFFF",
-  },
   displayFlex:{
     display: "flex",
   },
@@ -33,35 +27,43 @@ const basicsStyle = {
   texthome:{
     textAlign: "center"
   },
-
-  colorcard:{
-    color: "white"
-},
-bg: {
-    backgroundColor: "#0d0173",
+  box:{
+    color:"Black",
+    backgroundColor:"#a59aa6",
     borderRadius: "10px",
-    padding: "5px",
-    boxShadow: "5px 10px 10px #2e36ab"
-},
-
-web:{
-    borderRadius: "50% ",
-    height:"500px",
-    padding: "20px 20px 20px 50px",
-    // width: "1500px",
- 
-  },
-  topleft: {
+    padding: "20px",
     position: "relative",
-    width: "600px",
-    Top: "500px",
-    Left: "500px",
-    color: "white",
+    left: "28%",
+    width: "500px",
+    height: "500px",
     fontSize: "20px",
-    backgroundColor: "blue",
-  },
 
-    ...customCheckboxRadioSwitch,
-  };
+  },
+  contact_left:{
+    backgroundColor: "#d9d5d4",
+      flexBasis: "60%",
+      padding: "40px 60px",
+  },
+  contact_right:{
+    fontSize: "18px",
+       flexBasis: "40%",
+       padding: "40px",
+      backgroundColor: "#0f8704",
+      color: "#fff"
+  },
+  mssg: {
+    width: "97%",
+    boxSizing: "border-Box",
+  },
+  btn: {
+    width: "30%",
+    height: "35px",
+    fontSize: "20px",
+    borderRadius: "30px",
+    backgroundColor: "#021396",
+  },
+  ...customCheckboxRadioSwitch,
+};
+
 
 export default basicsStyle;

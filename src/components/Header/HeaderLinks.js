@@ -159,7 +159,7 @@ export default function HeaderLinks(props) {
       {
         !(localStorage.getItem('token'))  ? 
         <ListItem className={classes.listItem}>
-        <Link to={'/login'} onClick={ () => activeTab("contact")} 
+        <Link to={'/login'} onClick={ () => activeTab("login")} 
           className={classNames(classes.aDefaultRemove)} >
           <Button
             color="transparent"

@@ -144,9 +144,10 @@ export default function Donate() {
  Alongwith academics, Parkshala also focuses on value education and character-building. The environment at most of these children's homes is not conducive for learning and they lack good role-models in their lives. These kids will soon be the youth of India and it is immensely crucial to have compassionate, well-behaved, diligent and honest souls on the streets.
  <br/>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <spam>vist our website :  </spam> &nbsp; <Button className={classes.btn1} href="https://www.parkshala.com/">Vist</Button>
- &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1}> Donate </Button>
+ <spam>vist our website :  </spam> &nbsp; <Button className={classes.btn1} href="https://www.parkshala.com/">Vist</Button> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <spam>Click here for donation :  </spam> &nbsp; <Button className={classes.btn1} href="#">Donate</Button>
+ 
+ {/* <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1}> Donate </Button> */}
           </Typography>
     
         </CardContent>
@@ -197,7 +198,7 @@ export default function Donate() {
 
  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
- <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1}> Donate </Button>
+ <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1} href="#"> Donate </Button>
           </Typography>
     
         </CardContent>
@@ -243,7 +244,7 @@ export default function Donate() {
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <spam>vist our website :  </spam> &nbsp; <Button className={classes.btn1} href="https://www.parkshala.com/">Vist</Button>
  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1}> Donate </Button>
+ <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1} href="#"> Donate </Button>
           </Typography>
     
         </CardContent>
@@ -289,7 +290,7 @@ export default function Donate() {
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <spam>vist our website :  </spam> &nbsp; <Button className={classes.btn1} href="https://www.teachforindia.org/">Vist</Button>
  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1}> Donate </Button>
+ <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1} href="#"> Donate </Button>
           </Typography>
     
         </CardContent>
@@ -333,7 +334,7 @@ export default function Donate() {
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <spam>vist our website :  </spam> &nbsp; <Button className={classes.btn1} href="https://www.parkshala.com/">Vist</Button>
  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1}> Donate </Button>
+ <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1} href="#"> Donate </Button>
           </Typography>
     
         </CardContent>
@@ -375,7 +376,7 @@ export default function Donate() {
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <spam>vist our website :  </spam> &nbsp; <Button className={classes.btn1} href="https://sewabharat.org/">Vist</Button>
  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1}> Donate </Button>
+ <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1} href="#"> Donate </Button>
           </Typography>
     
         </CardContent>

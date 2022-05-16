@@ -55,7 +55,7 @@ function App() {
             <GridItem>
               <div className={classes.brand}>
                 <h1 className={classes.title}>
-                  Charity foundation
+                  Care Club
                 </h1>
                 <h3 className={classes.subtitle}>
                   We trust in humanity first !!
