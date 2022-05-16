@@ -145,7 +145,7 @@ export default function Donate() {
  <br/>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <spam>vist our website :  </spam> &nbsp; <Button className={classes.btn1} href="https://www.parkshala.com/">Vist</Button> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <spam>Click here for donation :  </spam> &nbsp; <Button className={classes.btn1} href="#">Donate</Button>
+ <spam>Click here for donation :  </spam> &nbsp; <Button className={classes.btn1} href="../assets/components/payment gateway/pay.html">Donate</Button>
  
  {/* <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1}> Donate </Button> */}
           </Typography>
