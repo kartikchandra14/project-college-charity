@@ -81,7 +81,7 @@ export default function ContactUs(props) {
               .then(function (response) {
                   if(response.status === 201){
                           console.log("sendDetailsToServer_2", response,);
-                    alert("Contact details submitted.")
+                    alert("Volunteer details submitted.")
                   } 
                   else{
                       // props.showError("Some error ocurred");

@@ -101,9 +101,6 @@ const sendDetailsToServer = () => {
             })
             .catch(function (error) {
                 console.log(error);
-                if(error?.response?.status == 401){
-                    alert(`Invalid email or password`);
-                }
             });    
     } else {
         props.showError('Please enter valid username and password')    

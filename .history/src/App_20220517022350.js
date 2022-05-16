@@ -31,7 +31,6 @@ import volunt from './components/volunteer/Volunteer.js';
 import list from './components/donate/list.js';
 import Login from './components/Login/login.js';
 import Signup from './components/SignUp/signup.js';
-import Payment from "./components/payment gateway/payment-gateway.js";
 
 const useStyles = makeStyles(styles);
 
@@ -79,7 +78,6 @@ function App() {
           <Route path='/contact' component={ContactUs} />
           <Route path='/login' component={Login} />
           <Route path='/signup' component={Signup} />
-          <Route path='/payment' component={Payment} />
       </Switch>
       {/* <Switch>
           <Route exact path="/">

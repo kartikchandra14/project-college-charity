@@ -17,7 +17,7 @@ import classNames from "classnames";
 
 const useStyles = makeStyles(styles);
 
-export default function Volunt(props) {
+export default function PaymentGateway(props) {
   const classes = useStyles();
  
   React.useEffect(() => {
@@ -119,78 +119,67 @@ const sendDetailsToServer = () => {
   // 
   return (
     <div className={classes.sections}>
-    <div className={classes.texthome}>
-      <h2>
-        Volunteer
-        </h2>
-      </div>
-        <br/>
-        <br/>
-        <br/>
-
-        <div class={classes.container}>
-<hl></hl>
-<div class={classes.displayFlex}>
-<div class={classes.contact_left}>
-  <h3>Apply Here</h3>
-<form>
-
-  <div class="input-row">
-<div class="input-group">
-     <label>Name</label>
-     <input type="text" placeholder="John Amendo" id="name" required onChange={handleChange}/>
-</div>
-<br/>
-<div class="input-group">
-     <label>Address</label>
-     <input type="text" placeholder="Delhi, India" id="address" required onChange={handleChange}/>
-</div>
-<br/>
-<div class="input-group">
-     <label>email</label>
-     <input type="email" placeholder="john@abc.com" id="email" required onChange={handleChange}/>
-</div>
-<br/>
-<div class="input-group">
-     <label>Contact number</label>
-     <input type="int" placeholder="9999-xxx-yyy" id="contactNumber" required onChange={handleChange}/>
-</div>
-<br/>
-<div class="input-group">
-     <label>Age</label>
-     <input type="int" placeholder="25" id="age" required onChange={handleChange}/>
-     </div>
-<br/>
-<div class="input-group">
-     <label>Volunteer for days</label>
-     <input type="varchar" placeholder="30" id="volunteerForDays" required onChange={handleChange}/>
-</div>
-
-<br/>
-
-
-<br/>
-<button className={classes.btn} type="submit" onClick={handleSubmitClick}>
-  Apply
-  </button>
-</div>
-</form>
-
-</div>
-<div class={classes.contact_right}>
-  <h3>Read the description carefully</h3>
-<p>Volunteering can help you make friends, learn new skills, advance your career, and even feel happier and healthier. Learn how to find the right volunteer opportunity for you.<br/>
-                 Benefits you get when you apply from here.<br/>
-                 We are providing "Certificates" and much more, to the Candidates who wants to apply for Volunteer.<br/>
-                 there are two ways to Volunteer: <br/>
-                1. One Time :- In which You can Volunteer for one day.<br/>
-                2. 30 days:- In this Category you can apply as an part-time Intern for a minimum amount of 30 days for which you get a certificate. and if you exceed more than 40 days then we will plant a tree on your name.</p> <br/>
-
-
-</div>
-</div>
-</div>
-      </div>
+    <div class="container">
+        <h1>Confirm Your Payment</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Owner</h3>
+                <div class="input-field">
+                    <input type="text" />
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="password" />
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field">
+                    <input type="text" />
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>Expiry Date</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                      </select>
+                      <select name="years" id="years">
+                        <option value="2027">2027</option>
+                        <option value="2026">2026</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                      </select>
+                </div>
+                <div class="cards">
+                    <img src="mc.png" alt="" />
+                    <img src="vi.png" alt="" />
+                    <img src="pp.png" alt="" />
+                </div>
+            </div>    
+        </div>
+        <a href="">Confirm</a>
+    </div>
+    </div>
 
 );
 }

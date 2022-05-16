@@ -93,9 +93,14 @@ const sendDetailsToServer = () => {
         
         axios.post(API_BASE_URL+'volunteer', payload, {headers: headers})
             .then(function (response) {
-                if(response.status === 201){
-                        console.log("sendDetailsToServer_2", response,);
-                  alert("Volunteer details submitted.")
+                if(response.status === 200){
+                    // setState(prevState => ({
+                        //     ...prevState,
+                        //     'successMessage' : 'Registration successful. Redirecting to home page..'
+                        // }))
+                        console.log("sendDetailsToServer_2", response, response?.data?.jwt_token);
+                    redirectToHome();
+                    // props.showError(null)
                 } 
                 else{
                     // props.showError("Some error ocurred");

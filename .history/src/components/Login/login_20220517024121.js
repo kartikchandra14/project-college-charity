@@ -101,7 +101,7 @@ const sendDetailsToServer = () => {
             })
             .catch(function (error) {
                 console.log(error);
-                if(error?.response?.status == 401){
+                if(error.status == 401){
                     alert(`Invalid email or password`);
                 }
             });    

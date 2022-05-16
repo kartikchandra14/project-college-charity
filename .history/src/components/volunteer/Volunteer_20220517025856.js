@@ -59,8 +59,6 @@ const handleChange = (e) => {
 const handleSubmitClick = (e) => {
     e.preventDefault();
     console.log("handleSubmitClick", e, state, state.password, state.confirmPassword, props);
-    console.log("handleSubmitClick_2", state.name, state?.email, state?.age, state?.address, state?.contactNumber, state?.volunteerForDays);
-    
     if(state.name && state?.email && state?.age && state?.address && state?.contactNumber && state?.volunteerForDays) {
         sendDetailsToServer();
     }
@@ -72,30 +70,26 @@ const handleSubmitClick = (e) => {
 
 
 const sendDetailsToServer = () => {
-  console.log("sendDetailsToServer", state);
-    if(state.email.length && state.name.length && state.address.length && state.contactNumber.length ) {
+    if(state.email.length && state.password.length) {
         // props.showError(null);
         const payload={
             "email":state.email,
             "name":state.name,
             "address": state.address,
-            "age": Number(state.age),
+            "age": state.age,
             "contactNumber": state.contactNumber,
-            "volunteerForDays": state.volunteerForDays
+            "voluteerForDays": state.voluteerForDays
         }
-        if(!(localStorage.getItem("token"))){
-          return alert("Please login first");
-        }
-        const headers = {
-          'Content-Type': 'application/json',
-          'Authorization': `${localStorage.getItem("token")}`
-        }
-        
-        axios.post(API_BASE_URL+'volunteer', payload, {headers: headers})
+        axios.post(API_BASE_URL+'volunteer', payload)
             .then(function (response) {
-                if(response.status === 201){
-                        console.log("sendDetailsToServer_2", response,);
-                  alert("Volunteer details submitted.")
+                if(response.status === 200){
+                    // setState(prevState => ({
+                        //     ...prevState,
+                        //     'successMessage' : 'Registration successful. Redirecting to home page..'
+                        // }))
+                        console.log("sendDetailsToServer_2", response, response?.data?.jwt_token);
+                    redirectToHome();
+                    // props.showError(null)
                 } 
                 else{
                     // props.showError("Some error ocurred");
@@ -138,32 +132,32 @@ const sendDetailsToServer = () => {
   <div class="input-row">
 <div class="input-group">
      <label>Name</label>
-     <input type="text" placeholder="John Amendo" id="name" required onChange={handleChange}/>
+     <input type="text" placeholder="John Amendo" id="name"/>
 </div>
 <br/>
 <div class="input-group">
      <label>Address</label>
-     <input type="text" placeholder="Delhi, India" id="address" required onChange={handleChange}/>
+     <input type="text" placeholder="Delhi, India" id="address"/>
 </div>
 <br/>
 <div class="input-group">
      <label>email</label>
-     <input type="email" placeholder="john@abc.com" id="email" required onChange={handleChange}/>
+     <input type="email" placeholder="john@abc.com" id="email"/>
 </div>
 <br/>
 <div class="input-group">
      <label>Contact number</label>
-     <input type="int" placeholder="9999-xxx-yyy" id="contactNumber" required onChange={handleChange}/>
+     <input type="int" placeholder="9999-xxx-yyy" id="contactNumber"/>
 </div>
 <br/>
 <div class="input-group">
      <label>Age</label>
-     <input type="int" placeholder="25" id="age" required onChange={handleChange}/>
+     <input type="int" placeholder="25" id="age"/>
      </div>
 <br/>
 <div class="input-group">
-     <label>Volunteer for days</label>
-     <input type="varchar" placeholder="30" id="volunteerForDays" required onChange={handleChange}/>
+     <label>Volunteer for</label>
+     <input type="varchar" placeholder="30 days" id="voluteerForDays"/>
 </div>
 
 <br/>

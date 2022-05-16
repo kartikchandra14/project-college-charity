@@ -17,7 +17,7 @@ import classNames from "classnames";
 
 const useStyles = makeStyles(styles);
 
-export default function Volunt(props) {
+export default function PaymentGateway(props) {
   const classes = useStyles();
  
   React.useEffect(() => {

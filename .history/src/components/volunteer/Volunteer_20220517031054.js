@@ -79,23 +79,20 @@ const sendDetailsToServer = () => {
             "email":state.email,
             "name":state.name,
             "address": state.address,
-            "age": Number(state.age),
+            "age": state.age,
             "contactNumber": state.contactNumber,
-            "volunteerForDays": state.volunteerForDays
+            "voluteerForDays": state.voluteerForDays
         }
-        if(!(localStorage.getItem("token"))){
-          return alert("Please login first");
-        }
-        const headers = {
-          'Content-Type': 'application/json',
-          'Authorization': `${localStorage.getItem("token")}`
-        }
-        
-        axios.post(API_BASE_URL+'volunteer', payload, {headers: headers})
+        axios.post(API_BASE_URL+'volunteer', payload)
             .then(function (response) {
-                if(response.status === 201){
-                        console.log("sendDetailsToServer_2", response,);
-                  alert("Volunteer details submitted.")
+                if(response.status === 200){
+                    // setState(prevState => ({
+                        //     ...prevState,
+                        //     'successMessage' : 'Registration successful. Redirecting to home page..'
+                        // }))
+                        console.log("sendDetailsToServer_2", response, response?.data?.jwt_token);
+                    redirectToHome();
+                    // props.showError(null)
                 } 
                 else{
                     // props.showError("Some error ocurred");
@@ -163,7 +160,7 @@ const sendDetailsToServer = () => {
 <br/>
 <div class="input-group">
      <label>Volunteer for days</label>
-     <input type="varchar" placeholder="30" id="volunteerForDays" required onChange={handleChange}/>
+     <input type="varchar" placeholder="30" id="voluteerForDays" required onChange={handleChange}/>
 </div>
 
 <br/>

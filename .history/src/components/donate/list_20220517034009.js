@@ -51,7 +51,7 @@ const ExpandMore = styled((props) => {
 // card
 
 
-export default function Donate(props) {
+export default function Donate() {
 
   const [expanded, setExpanded] = React.useState(false);
 
