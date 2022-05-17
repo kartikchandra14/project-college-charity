@@ -27,9 +27,6 @@ import styles from "../../assets/jss/material-kit-react/components/headerLinksSt
 const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
-  let isLoggedIn = (props.token || ( localStorage.getItem('token')) ) ? true : false;
-  // let [ isLoggedIn, isLoggedInSet ] = useState((props.token || ( localStorage.getItem('token')) ) ? true : false);
-
   const classes = useStyles();
   var [activeTabValue, setActiveTabValue] = useState("home");
   useEffect(() => {
@@ -37,33 +34,18 @@ export default function HeaderLinks(props) {
       "This only happens ONCE.  But it happens AFTER the initial render."
       );
       getActiveTab;
-      
-    }, []);
-    const activeTab = ((param) => {
-      console.log("activeTab", param);
-      if(param){
-        setActiveTabValue(param);
-      }
-    });
-  // isLoggedInSet(() => {
-  //   isLoggedIn = (props.token || ( localStorage.getItem('token')) ) ? true : false;
-  // })
+  }, []);
+  const activeTab = ((param) => {
+    console.log("activeTab", param);
+    if(param){
+      setActiveTabValue(param);
+    }
+  });
+
   const logout = (() => {
     localStorage.clear();
-    isLoggedIn  = false;
-    // loggedIn();
+
   })
-  // const loggedIn = (() => {
-  //   isLoggedInSet(prevState => ({
-  //     ...prevState,
-  //     isLoggedIn : false
-  // }));
-  // });
-
-  // if(props.token){
-  //   loggedIn();
-  // }
-
   const getActiveTab = (() => {
     const location = useLocation();
     console.log("useLocation", location.pathname?.split("/")[1] );
@@ -81,7 +63,6 @@ export default function HeaderLinks(props) {
   
   
   return (
-
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Button
@@ -181,7 +162,7 @@ export default function HeaderLinks(props) {
       </Link>
       </ListItem>
       {
-        (!isLoggedIn)  ? 
+        (!(localStorage.getItem('token')) || props.token)  ? 
         <ListItem className={classes.listItem}>
         <Link to={'/login'} onClick={ () => activeTab("login")} 
           className={classNames(classes.aDefaultRemove)} >
