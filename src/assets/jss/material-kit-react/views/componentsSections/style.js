@@ -27,48 +27,79 @@ const basicStyle = {
       ...title,
     width: "750px",
     height: "500px",
-    border: "1px solid",
-    backgroundColor: "white",
+    
+    
+},
+
+body: {
+        
+    backgroundColor: "#b1cdf2",
+    border: "4px solid",
     display: "flex",
     flexDirection: "column",
-    padding: "40px",
+    padding: "20px",
     justifyContent: "space-around",
 },
 
-
+text:{
+    textAlign: "center",
+},
 
 first_row:{
      display: "flex",
 },
 
 owner:{
-    width: "100%",
-    marginRight: "40px"
+    width: "600px",
+    marginRight: "40px",
+    paddingLeft: "30px"
 },
+
 
 input_field: {
-    border: "1px solid #999",
+    
+    width: "450px",
+},
+inp: {
+    width: "100%",
+    border: "none",
+    outline: "none",
+    padding: "10px"
 },
 
-// input_fieldinput: {
-//     width: "100%",
-//     border: "none",
-//     outline: "none",
-//     padding: "10px"
-// },
+selection: {
+    display: "flex",
+    
+},
 
-// selection: {
-//     display: "flex",
-//     justifyContent: "space-between",
-//     alignItems: "center"
-// },
-
-// selection,select: {
-//     padding: "10px 20px",
-// },
+months: {
+    margin: "0",
+    padding: "10px 20px",
+    boxSizing: "border-box",
+    fontFamily: 'Poppins, sans-serif',
+},
 
 img: {
-    width: "100px",
+    height: "70px",
+    width: "70px",
+    display:  "flex",
+    margin:  "10px",
+    padding:  "10px",
+    position: "relative",
+    left: "350px"
+
+},
+btn: {
+    width: "1000px",
+    backgroundColor: "blueviolet",
+    color: "white",
+    textAlign: "center",
+    textTransform: "uppercase",
+    textDecoration: "none",
+    padding: "10px",
+    fontSize: "18px",
+    position: "relative",
+    left: "45px"
 },
 ...customCheckboxRadioSwitch,
 };

@@ -55,6 +55,11 @@ const shopStyle = {
   colorcard:{
       color: "white"
   },
+  size:{
+      color: "black",
+      backgroundColor: "#c3c6c9",
+    
+  },
   colorshop:{
       color: "#0059ff",
   },

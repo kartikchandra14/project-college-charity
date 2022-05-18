@@ -26,12 +26,17 @@ import NativeSelect from '@material-ui/core/NativeSelect';
 
 const useStyles = makeStyles(styles);
 
-export default function Prod() {
+export default function Prod(props) {
   const classes = useStyles();
   React.useEffect(() => {
     
     return function cleanup() {};
   });
+
+  const redirectToPayment = () => {
+    // props.updateTitle('Signup')
+    props.history.push('/payment'); 
+  }
   return (
     // why section
     <div className={classes.sections}>
@@ -126,9 +131,10 @@ export default function Prod() {
       <FormControl className={classes.native} sx={{ m: 1, minWidth: 120 }}>
   <InputLabel className={classes.colorcard} variant="standard" htmlFor="uncontrolled-native">
     Size
-  </InputLabel>
+  </InputLabel><br/>
   <NativeSelect
     defaultValue={30}
+    className={classes.size}
     inputProps={{
       name: 'Size',
       id: 'uncontrolled-native',
@@ -141,7 +147,7 @@ export default function Prod() {
   </NativeSelect>
 </FormControl>
     
-        <Button className={classes.btn} size="small">Buy</Button>
+        <Button onClick={redirectToPayment} className={classes.btn} size="small">Buy</Button>
       
       </CardActions>
         </Card>
@@ -165,9 +171,10 @@ export default function Prod() {
       <FormControl className={classes.native} sx={{ m: 1, minWidth: 120 }}>
   <InputLabel className={classes.colorcard} variant="standard" htmlFor="uncontrolled-native">
     Size
-  </InputLabel>
+  </InputLabel><br/>
   <NativeSelect
     defaultValue={30}
+    className={classes.size}
     inputProps={{
       name: 'Size',
       id: 'uncontrolled-native',
@@ -180,7 +187,7 @@ export default function Prod() {
   </NativeSelect>
 </FormControl>
     
-        <Button className={classes.btn} size="small">Buy</Button>
+        <Button onClick={redirectToPayment} className={classes.btn} size="small">Buy</Button>
       
       </CardActions>
          </Card>
@@ -210,9 +217,10 @@ export default function Prod() {
       <FormControl className={classes.native} sx={{ m: 1, minWidth: 120 }}>
   <InputLabel className={classes.colorcard} variant="standard" htmlFor="uncontrolled-native">
     Size
-  </InputLabel>
+  </InputLabel> <br/>
   <NativeSelect
     defaultValue={30}
+    className={classes.size}
     inputProps={{
       name: 'Size',
       id: 'uncontrolled-native',
@@ -225,7 +233,7 @@ export default function Prod() {
   </NativeSelect>
 </FormControl>
     
-        <Button className={classes.btn} size="small">Buy</Button>
+        <Button onClick={redirectToPayment} className={classes.btn} size="small">Buy</Button>
       
       </CardActions>
        </Card>
@@ -258,9 +266,10 @@ export default function Prod() {
       <FormControl className={classes.native} sx={{ m: 1, minWidth: 120 }}>
   <InputLabel className={classes.colorcard} variant="standard" htmlFor="uncontrolled-native">
     Size
-  </InputLabel>
+  </InputLabel><br/>
   <NativeSelect
     defaultValue={30}
+    className={classes.size}
     inputProps={{
       name: 'Size',
       id: 'uncontrolled-native',
@@ -273,7 +282,7 @@ export default function Prod() {
   </NativeSelect>
 </FormControl>
     
-        <Button className={classes.btn} size="small">Buy</Button>
+        <Button onClick={redirectToPayment} className={classes.btn} size="small">Buy</Button>
       
       </CardActions>
         </Card>
@@ -297,9 +306,10 @@ export default function Prod() {
       <FormControl className={classes.native} sx={{ m: 1, minWidth: 120 }}>
       <InputLabel className={classes.colorcard} variant="standard" htmlFor="uncontrolled-native">
         Size
-      </InputLabel>
+      </InputLabel><br/>
       <NativeSelect
         defaultValue={30}
+        className={classes.size}
         inputProps={{
           name: 'Size',
           id: 'uncontrolled-native',
@@ -312,7 +322,7 @@ export default function Prod() {
   </NativeSelect>
 </FormControl>
     
-        <Button className={classes.btn} size="small">Buy</Button>
+        <Button onClick={redirectToPayment} className={classes.btn} size="small">Buy</Button>
       
       </CardActions>
       </Card>
@@ -337,9 +347,10 @@ export default function Prod() {
       <FormControl className={classes.native} sx={{ m: 1, minWidth: 120 }}>
   <InputLabel className={classes.colorcard} variant="standard" htmlFor="uncontrolled-native">
     Size
-  </InputLabel>
+  </InputLabel><br/>
   <NativeSelect
     defaultValue={30}
+    className={classes.size}
     inputProps={{
       name: 'Size',
       id: 'uncontrolled-native',
@@ -352,7 +363,7 @@ export default function Prod() {
   </NativeSelect>
 </FormControl>
     
-        <Button className={classes.btn} size="small">Buy</Button>
+        <Button onClick={redirectToPayment} className={classes.btn} size="small">Buy</Button>
       
       </CardActions>
        </Card>

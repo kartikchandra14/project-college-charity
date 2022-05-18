@@ -120,34 +120,37 @@ const sendDetailsToServer = () => {
   return (
     <div className={classes.sections}>
     <div class={classes.container}>
-        <h1>Confirm Your Payment</h1>
+        <div className={classes.body}>
+        <h1 class={classes.text}>Confirm Your Payment</h1>
+        <br/>
         <div class={classes.first_row}>
             <div class={classes.owner}>
                 <h3>Owner</h3>
                 <div class={classes.input_field}>
-                    <input type="text" />
+                    <input type="text" className={classes.inp} />
                 </div>
             </div>
             <div class="cvv">
                 <h3>CVV</h3>
-                <div class={classes.input_field}>
-                    <input type="password" />
+                <div class={classes.cvv}>
+                    <input type="password" className={classes.inp} />
                 </div>
             </div>
         </div>
-        <div class="second-row">
-            <div class="card-number">
+        <div class={classes.First_row}>
+            <div class={classes.owner}>
                 <h3>Card Number</h3>
                 <div class={classes.input_field}>
-                    <input type="text" />
+                    <input type="text"  className={classes.inp}/>
                 </div>
             </div>
         </div>
-        <div class="third-row">
+        <div class={classes.First_row}>
+            <div class={classes.owner}>
             <h3>Expiry Date</h3>
-            <div class="selection">
-                <div class="date">
-                    <select name="months" id="months">
+            <div class={classes.selection}>
+                <div >
+                    <select name="months" className={classes.months}>
                         <option value="Jan">Jan</option>
                         <option value="Feb">Feb</option>
                         <option value="Mar">Mar</option>
@@ -161,7 +164,9 @@ const sendDetailsToServer = () => {
                         <option value="Nov">Nov</option>
                         <option value="Dec">Dec</option>
                       </select>
-                      <select name="years" id="years">
+                      &nbsp;
+                      &nbsp;
+                      <select name="years" className={classes.months}>
                         <option value="2027">2027</option>
                         <option value="2026">2026</option>
                         <option value="2025">2025</option>
@@ -171,13 +176,17 @@ const sendDetailsToServer = () => {
                       </select>
                 </div>
                 <div class={classes.img}>
-                    <img src="mc.png" alt="" />
-                    <img src="vi.png" alt="" />
-                    <img src="pp.png" alt="" />
+                    <img src="../images/mc.png" alt="" />
+                    <img src="../images/vi.png" alt="" />
+                    <img src="../images/pp.png" alt="" />
                 </div>
             </div>    
+            </div>    
         </div>
-        <a href="">Confirm</a>
+    
+        <br/>
+        <button className={classes.btn}><a href=""></a>CONFIRM</button>
+    </div>
     </div>
     </div>
 

@@ -177,7 +177,7 @@ export default function AboutUs() {
 
         />
         <CardContent>
-        <h2 className={classNames(classes.colorcard,classes.texthome)}>BHAVYA GANDHI</h2>
+        <h2 className={classNames(classes.colorcard,classes.texthome)}>BHAVYA GUPTA</h2>
         <h5  className={classNames(classes.colortil,classes.texthome)}>Front-End Developer</h5>
         <p className={classes.colorcard}>Worked on HTML, CSS, Bootstrap and JavaScript.</p>
         </CardContent>

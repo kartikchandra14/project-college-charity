@@ -107,7 +107,7 @@ export default function SectionBasics() {
     <div className={classes.sections}>
       <div className={classes.texthome}>
         <h2 >
-         HOME page
+         HOME PAGE
         </h2>
       </div>
       <br/>

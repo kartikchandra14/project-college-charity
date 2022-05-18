@@ -53,6 +53,7 @@ const basicsStyle = {
   mssg: {
     width: "97%",
     boxSizing: "border-Box",
+    resize: "none",
   },
   btn: {
     width: "30%",
