@@ -50,7 +50,6 @@ export default function HeaderLinks(props) {
   // })
   const logout = (() => {
     localStorage.clear();
-    isLoggedIn  = false;
     // loggedIn();
   })
   // const loggedIn = (() => {

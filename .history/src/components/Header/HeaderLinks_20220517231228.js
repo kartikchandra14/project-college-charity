@@ -28,7 +28,6 @@ const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
   let isLoggedIn = (props.token || ( localStorage.getItem('token')) ) ? true : false;
-  // let [ isLoggedIn, isLoggedInSet ] = useState((props.token || ( localStorage.getItem('token')) ) ? true : false);
 
   const classes = useStyles();
   var [activeTabValue, setActiveTabValue] = useState("home");
@@ -37,33 +36,18 @@ export default function HeaderLinks(props) {
       "This only happens ONCE.  But it happens AFTER the initial render."
       );
       getActiveTab;
-      
-    }, []);
-    const activeTab = ((param) => {
-      console.log("activeTab", param);
-      if(param){
-        setActiveTabValue(param);
-      }
-    });
-  // isLoggedInSet(() => {
-  //   isLoggedIn = (props.token || ( localStorage.getItem('token')) ) ? true : false;
-  // })
+  }, []);
+  const activeTab = ((param) => {
+    console.log("activeTab", param);
+    if(param){
+      setActiveTabValue(param);
+    }
+  });
+
   const logout = (() => {
     localStorage.clear();
-    isLoggedIn  = false;
-    // loggedIn();
+    isLoggedIn = false;
   })
-  // const loggedIn = (() => {
-  //   isLoggedInSet(prevState => ({
-  //     ...prevState,
-  //     isLoggedIn : false
-  // }));
-  // });
-
-  // if(props.token){
-  //   loggedIn();
-  // }
-
   const getActiveTab = (() => {
     const location = useLocation();
     console.log("useLocation", location.pathname?.split("/")[1] );
@@ -81,6 +65,7 @@ export default function HeaderLinks(props) {
   
   
   return (
+    let { isLoggedIn2 } = this.state;
 
     <List className={classes.list}>
       <ListItem className={classes.listItem}>

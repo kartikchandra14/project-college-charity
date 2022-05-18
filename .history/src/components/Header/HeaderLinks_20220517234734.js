@@ -27,9 +27,11 @@ import styles from "../../assets/jss/material-kit-react/components/headerLinksSt
 const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
-  let isLoggedIn = (props.token || ( localStorage.getItem('token')) ) ? true : false;
-  // let [ isLoggedIn, isLoggedInSet ] = useState((props.token || ( localStorage.getItem('token')) ) ? true : false);
-
+  // let isLoggedIn = (props.token || ( localStorage.getItem('token')) ) ? true : false;
+  let [ isLoggedIn, isLoggedInSet ] = useState((props.token || ( localStorage.getItem('token')) ) ? true : false);
+  if(props.token){
+    loggedIn();
+  }
   const classes = useStyles();
   var [activeTabValue, setActiveTabValue] = useState("home");
   useEffect(() => {
@@ -50,20 +52,14 @@ export default function HeaderLinks(props) {
   // })
   const logout = (() => {
     localStorage.clear();
-    isLoggedIn  = false;
-    // loggedIn();
+    loggedIn();
   })
-  // const loggedIn = (() => {
-  //   isLoggedInSet(prevState => ({
-  //     ...prevState,
-  //     isLoggedIn : false
-  // }));
-  // });
-
-  // if(props.token){
-  //   loggedIn();
-  // }
-
+  const loggedIn = (() => {
+    isLoggedInSet(prevState => ({
+      ...prevState,
+      isLoggedIn : false
+  }));
+  })
   const getActiveTab = (() => {
     const location = useLocation();
     console.log("useLocation", location.pathname?.split("/")[1] );
