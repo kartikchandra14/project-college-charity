@@ -154,8 +154,8 @@ export default function Donate(props) {
  <spam>vist our website :  </spam> &nbsp; <Button className={classes.btn1} href="https://www.parkshala.com/">Vist</Button> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <spam>Click here for donation :  </spam> &nbsp; 
  <Link to={'/payment'}>
- <Button className={classes.btn1} onClick={redirectToPayment}>
-   {/*href="../assets/components/payment gateway/pay.html"  */}
+ <Button className={classes.btn1} onClick={redirectToPayment} href="#" >
+   
    Donate
 </Button>
   </Link>
@@ -211,7 +211,7 @@ export default function Donate(props) {
 
  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
- <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1} href="#"> Donate </Button>
+ <spam>Click here for donation :  </spam> &nbsp; <Button onClick={redirectToPayment}  className={classes.btn1} href="#"> Donate </Button>
           </Typography>
     
         </CardContent>
@@ -259,8 +259,8 @@ export default function Donate(props) {
  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <spam>Click here for donation :  </spam> &nbsp; 
  <Link to={'/payment'}>
- <Button className={classes.btn1} >
-   {/*href="../assets/components/payment gateway/pay.html"  */}
+ <Button className={classes.btn1} onClick={redirectToPayment} href="#"  >
+   
    Donate
 </Button>
   </Link>
@@ -309,7 +309,7 @@ export default function Donate(props) {
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <spam>vist our website :  </spam> &nbsp; <Button className={classes.btn1} href="https://www.teachforindia.org/">Vist</Button>
  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <spam>Click here for donation :  </spam> &nbsp; <Button  className={classes.btn1} href="#"> Donate </Button>
+ <spam>Click here for donation :  </spam> &nbsp; <Button  onClick={redirectToPayment} className={classes.btn1} href="#"> Donate </Button>
           </Typography>
     
         </CardContent>
@@ -355,8 +355,7 @@ export default function Donate(props) {
  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <spam>Click here for donation :  </spam> &nbsp; 
  <Link to={'/payment'}>
- <Button className={classes.btn1} >
-   {/*href="../assets/components/payment gateway/pay.html"  */}
+ <Button className={classes.btn1}  onClick={redirectToPayment}    href="#" >
    Donate
 </Button>
   </Link>
@@ -403,8 +402,8 @@ export default function Donate(props) {
  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <spam>Click here for donation :  </spam> &nbsp; 
  <Link to={'/payment'}>
- <Button className={classes.btn1} >
-   {/*href="../assets/components/payment gateway/pay.html"  */}
+ <Button className={classes.btn1}  onClick={redirectToPayment} href="#" >
+   
    Donate
 </Button>
   </Link>

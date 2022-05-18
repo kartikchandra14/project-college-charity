@@ -8,8 +8,8 @@ import  {useState} from "react";
 import {API_BASE_URL, ACCESS_TOKEN_NAME} from '../../constants/apiConstants';
 import axios from 'axios';
 
-import styles from "../../assets/jss/material-kit-react/views/componentsSections/voluntStyle.js";
-
+import styles from "../../assets/jss/material-kit-react/views/componentsSections/style.js";
+// import './style.css';
 
 import classNames from "classnames";
 
@@ -119,18 +119,18 @@ const sendDetailsToServer = () => {
   // 
   return (
     <div className={classes.sections}>
-    <div class="container">
+    <div class={classes.container}>
         <h1>Confirm Your Payment</h1>
-        <div class="first-row">
-            <div class="owner">
+        <div class={classes.first_row}>
+            <div class={classes.owner}>
                 <h3>Owner</h3>
-                <div class="input-field">
+                <div class={classes.input_field}>
                     <input type="text" />
                 </div>
             </div>
             <div class="cvv">
                 <h3>CVV</h3>
-                <div class="input-field">
+                <div class={classes.input_field}>
                     <input type="password" />
                 </div>
             </div>
@@ -138,7 +138,7 @@ const sendDetailsToServer = () => {
         <div class="second-row">
             <div class="card-number">
                 <h3>Card Number</h3>
-                <div class="input-field">
+                <div class={classes.input_field}>
                     <input type="text" />
                 </div>
             </div>
@@ -170,7 +170,7 @@ const sendDetailsToServer = () => {
                         <option value="2022">2022</option>
                       </select>
                 </div>
-                <div class="cards">
+                <div class={classes.img}>
                     <img src="mc.png" alt="" />
                     <img src="vi.png" alt="" />
                     <img src="pp.png" alt="" />
