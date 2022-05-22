@@ -126,14 +126,14 @@ const sendDetailsToServer = () => {
                      <form onSubmit = {handleSubmitClick}>
                          <input type='email' id='email' name='email' placeholder='email...' required onChange={handleChange}/>
                          <input type='password' id='password' name='pwd' placeholder='password...' required onChange={handleChange}/>
-                         <button onClick={handleSubmitClick}>
+                         <button onClick={handleSubmitClick} >
                              Log In
                          </button>
                      </form>
                  </div>
                  <div>
                      <Link to={'/signup'}>
-                        <button onClick={redirectToSignup}> 
+                        <button onClick={redirectToSignup} > 
                         {/* moveToSignUp */}
                              Create an account
                         </button>
