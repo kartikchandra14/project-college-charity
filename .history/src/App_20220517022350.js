@@ -40,7 +40,7 @@ function App() {
   <>
   <Router>
     <Header
-        brand="Charity"
+        brand="Care Club"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"

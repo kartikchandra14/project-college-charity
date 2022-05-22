@@ -91,7 +91,8 @@ const sendDetailsToServer = () => {
     return (
       <div className={classes.sections}>
         <div className={classes.container}>
-          Sign Up
+        <h2 className='h2'>Signup here</h2>
+
         </div>
         <div className='div-login'>
                  <div className='div-login-logo'>

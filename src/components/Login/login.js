@@ -29,7 +29,7 @@ const [token, setToken] = useState(null);
 const [signUpState , setSignUpState] = useState(null);
 const redirectToHome = () => {
     // props.updateTitle('Home')
-    props.history.push('/home');
+    props.history.push('/Sections');
 }
 const redirectToSignup = () => {
     // props.updateTitle('Signup')
@@ -86,11 +86,11 @@ const sendDetailsToServer = () => {
                                 ...prevState,
                                 token : response?.data?.jwt_token
                             }));
-                            window?.location?.reload();
-
+                            
                         }
                         // alert("User logged in");
-                    redirectToHome();
+                        redirectToHome();
+                        window?.location?.reload();
                     // props.showError(null)
                 } 
                 else{
@@ -116,8 +116,9 @@ const sendDetailsToServer = () => {
     return (
       <div className={classes.sections}>
         <div className={classes.container}>
-          Login
+          <h2 className='h2'>Login here</h2>
         </div>
+        
         <div className='div-login'>
                  <div className='div-login-logo'>
                      <Logo/>

@@ -10,6 +10,10 @@ import './App.css';
 // nodejs library that concatenates classes
 import classNames from "classnames";
 
+// auth
+// import { AuthProvider } from './components/auth/auth.js';
+
+
 // 
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
@@ -32,6 +36,7 @@ import list from './components/donate/list.js';
 import Login from './components/Login/login.js';
 import Signup from './components/SignUp/signup.js';
 import Payment from "./components/payment gateway/payment-gateway.js";
+// import { AuthProvider } from './components/auth/auth.js';
 
 const useStyles = makeStyles(styles);
 
@@ -39,9 +44,10 @@ function App() {
   const classes = useStyles();
   return (
   <>
+  
   <Router>
     <Header
-        brand="Charity"
+        brand="Care Club"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -70,7 +76,8 @@ function App() {
       <div className={classNames(classes.main, classes.mainRaised)}>
       
       <Switch>
-          <Route exact path='/' component={SectionBasics} />
+          <Route exact path='/' component={Login} />
+          <Route  path='/sections' component={SectionBasics} />
           
           <Route path='/donate' component={Donate} />
           <Route path='/volunteer' component={Volunt} />

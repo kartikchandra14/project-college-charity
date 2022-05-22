@@ -31,7 +31,7 @@ export default function HeaderLinks(props) {
   // let [ isLoggedIn, isLoggedInSet ] = useState((props.token || ( localStorage.getItem('token')) ) ? true : false);
 
   const classes = useStyles();
-  var [activeTabValue, setActiveTabValue] = useState("home");
+  var [activeTabValue, setActiveTabValue] = useState("login");
   useEffect(() => {
     console.log(
       "This only happens ONCE.  But it happens AFTER the initial render."
@@ -52,6 +52,7 @@ export default function HeaderLinks(props) {
     localStorage.clear();
     isLoggedIn  = false;
     // loggedIn();
+    props?.history?.push('/login'); 
     window?.location?.reload();
   })
   // const loggedIn = (() => {
@@ -72,7 +73,7 @@ export default function HeaderLinks(props) {
       activeTab(location.pathname?.split("/")[1])
     }
     else{
-      activeTab("home");
+      activeTab("login");
     }
   })
 
@@ -91,7 +92,7 @@ export default function HeaderLinks(props) {
           // target="_blank"
           className={classes.navLink}
         >
-          <Link to={'/'}  
+          <Link to={'/Sections'}  
             // className={ this.state.activeId === list.id && 'is-active' }
             // onClick={ this.activeTab.bind(this, "home") }           
             onClick={ () => activeTab("home") } 
@@ -184,7 +185,7 @@ export default function HeaderLinks(props) {
       {
         (!isLoggedIn)  ? 
         <ListItem className={classes.listItem}>
-        <Link to={'/login'} onClick={ () => activeTab("login")} 
+        <Link to={'/Login'} onClick={ () => activeTab("login")} 
           className={classNames(classes.aDefaultRemove)} >
           <Button
             color="transparent"
@@ -197,7 +198,7 @@ export default function HeaderLinks(props) {
         </Link>
         </ListItem> :
         <ListItem className={classes.listItem}>
-        <Link to={'/home'} onClick={ () => activeTab("home")} 
+        <Link to={'/Login'} onClick={ () => activeTab("login")} 
           className={classNames(classes.aDefaultRemove)} >
           <Button onClick={ () => logout()}
             color="transparent"
