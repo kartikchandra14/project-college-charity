@@ -35,7 +35,6 @@ import list from './components/donate/list.js';
 import Login from './components/Login/login.js';
 import Signup from './components/SignUp/signup.js';
 import Payment from "./components/payment gateway/payment-gateway.js";
-import Stuff from './components/donate/stuff.js';
 // import ProtectedRoute from './components/protectedRoutes.js';
 // import { AuthProvider } from './components/auth/auth.js';
 
@@ -82,7 +81,7 @@ function App() {
           <Route exact path='/login' component={Login} />
         
           <Route  path='/sections'component={SectionBasics} />
-          <Route path='/donate' component={Stuff} />
+          <Route path='/donate' component={Donate} />
           <Route path='/volunteer' component={Volunt} />
           <Route path='/Shop' component={Prod} />
           <Route path='/about' component={AboutUs} />

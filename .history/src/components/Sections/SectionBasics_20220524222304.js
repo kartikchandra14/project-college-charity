@@ -1,6 +1,6 @@
 import React from "react";
 
-// import Stuff from "../../components/donate/Stuff.js";
+import Stuff from "../../components/donate/Stuff.js";
 
 
 
@@ -205,6 +205,7 @@ export default function SectionBasics() {
 
 <div>
 
+      <Stuff/>
 <br/>
           
 

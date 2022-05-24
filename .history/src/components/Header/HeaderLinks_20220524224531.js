@@ -54,7 +54,7 @@ export default function HeaderLinks(props) {
     // loggedIn();
     props?.history?.push('/login');
     document.getElementById("loginLinkId")?.click(); 
-    window?.location?.reload();
+    // window?.location?.reload();
   })
   // const loggedIn = (() => {
   //   isLoggedInSet(prevState => ({
