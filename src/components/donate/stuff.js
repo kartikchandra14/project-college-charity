@@ -2,6 +2,10 @@ import React from "react"
 import { makeStyles } from "@material-ui/core/styles";
 import  {useState} from "react";
 
+import Donate from '../../components/donate/list.js';
+
+
+
 import {API_BASE_URL, ACCESS_TOKEN_NAME} from '../../constants/apiConstants';
 import axios from 'axios';
 
@@ -167,6 +171,9 @@ Our Volunteer will collect them for you and delivered them to an NGO that need i
 </div>
 </div>
       </div>
+      <div>
+      <Donate/>
+</div>
 </div>
 
    
