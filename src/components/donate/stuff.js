@@ -125,7 +125,7 @@ export default function Stuff(props) {
 <hl></hl>
 <div class={classes.displayFlex}>
 <div class={classes.contact_left}>
-  <h3>Recycle Time</h3>
+  <h3>Donation as Kind</h3>
 <form>
 
   <div class="input-row">

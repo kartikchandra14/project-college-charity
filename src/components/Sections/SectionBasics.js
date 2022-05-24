@@ -1,8 +1,5 @@
 import React from "react";
 
-// plugin that creates slider
-// import Slider from "nouislider";
-
 import Stuff from "../../components/donate/Stuff.js";
 
 
@@ -209,11 +206,16 @@ export default function SectionBasics() {
 <div>
 
       <Stuff/>
+<br/>
+          
 
 </div>
 
 
- 
+<br/>
+<br/>
+<br/>
+
 
 
 {/* why do charity? */}
