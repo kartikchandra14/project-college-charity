@@ -3,17 +3,12 @@ import React from "react";
 // plugin that creates slider
 // import Slider from "nouislider";
 
-// @material-ui/core components
+import Stuff from "../../components/donate/Stuff.js";
+
+
+
 import { makeStyles } from "@material-ui/core/styles";
-// import stuff from "../../assets/components/donate/stuff.js";
-// core components
-// import GridContainer from "components/Grid/GridContainer.js";
-// import GridItem from "components/Grid/GridItem.js";
-// import Button from "components/CustomButtons/Button.js";
-// import CustomInput from "components/CustomInput/CustomInput.js";
-// import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.js";
-// import Paginations from "components/Pagination/Pagination.js";
-// import Badge from "components/Badge/Badge.js";
+
 
 import styles from "../../assets/jss/material-kit-react/views/componentsSections/basicsStyle.js";
 
@@ -213,65 +208,12 @@ export default function SectionBasics() {
 
 <div>
 
-<div className={classes.sections}>
-    <div className={classes.texthome}>
-      <h2>
-        Donation Alert !
-        </h2>
-      </div>
-        <br/>
-        <br/>
-        <br/>
-
-        <div class={classes.container}>
-<hl></hl>
-<div class={classes.displayFlex}>
-<div class={classes.contact_left}>
-  <h3>Recycle Time</h3>
-<form>
-
-  <div class="input-row">
-<div class="input-group">
-     <label>Name</label>
-     <input type="text" placeholder="John Amendo"/>
-</div>
-<br/>
-<div class="input-group">
-     <label>email</label>
-     <input type="email" placeholder="john@abc.com"/>
-     </div>
-     <br/>
-<div class="input-group">
-     <label>Contact number</label>
-     <input type="int" placeholder="9999-xxx-yyy"/>
-</div>
-<br/>
-
-<div class="input-group">
-     <label>Address</label>
-     <input type="varchar" placeholder="chawdi baazar"/>
-</div>
-
-<br/>
-
-<button className={classes.btn} type="submit">Send</button>
-</div>
-</form>
+      <Stuff/>
 
 </div>
-<div class={classes.contact_right}>
-  <h3>Time to Donate some Stuff!</h3>
-<p>Sometimes "people" have something stored in their home which is useless for them but can be reuse like Clothes, shoes, Blankets and etc. they don't know what to do with them, In case you are those "people" this Section is for you here you can donate those stuff while sitting in your home. You just need to click on the Donate button given below and fill the information like your Email, Contact Number, Address(where to collect goods) and etc. <br/>
-Our Volunteer will collect them for you and delivered them to an NGO that need it.</p> <br/>
 
 
-</div>
-</div>
-</div>
-      </div>
-
-
-</div>
+ 
 
 
 {/* why do charity? */}

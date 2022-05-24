@@ -4,6 +4,7 @@ import { Router } from "express";
 import Authrouter from '../routers/app/AuthRouter';
 import  ContactUsRouter  from "./app/contactUsRouter";
 import UserRouter from "./app/UserRouter";
+// import  DonateRouter  from "./app/donateRouter";
 import  VolunteerRouter  from "./app/volunteerRouter";
 
 export class Routes {
@@ -18,6 +19,7 @@ export class Routes {
         this.router.use('/app/auth', Authrouter);
         this.router.use('/app/user',UserRouter);
         this.router.use('/app/contact', ContactUsRouter);      
+        // this.router.use('/app/donate', DonateRouter);
         this.router.use('/app/volunteer', VolunteerRouter);
     }
 

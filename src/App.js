@@ -1,5 +1,5 @@
-
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React, {components} from 'react';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Donate from './components/donate/list.js';
 import Volunt from './components/volunteer/Volunteer.js';
 import Prod from './components/shop/product.js';
@@ -11,8 +11,7 @@ import './App.css';
 import classNames from "classnames";
 
 // auth
-// import { AuthProvider } from './components/auth/auth.js';
-
+// import ProtectedRoutes from './protectedRoutes.jsx';
 
 // 
 import { makeStyles } from "@material-ui/core/styles";
@@ -36,19 +35,22 @@ import list from './components/donate/list.js';
 import Login from './components/Login/login.js';
 import Signup from './components/SignUp/signup.js';
 import Payment from "./components/payment gateway/payment-gateway.js";
+// import ProtectedRoute from './components/protectedRoutes.js';
 // import { AuthProvider } from './components/auth/auth.js';
 
 const useStyles = makeStyles(styles);
 
 function App() {
   const classes = useStyles();
+
+
   return (
   <>
   
   <Router>
     <Header
         brand="Care Club"
-        rightLinks={<HeaderLinks />}
+        rightLinks={<HeaderLinks/>}
         fixed
         color="transparent"
         changeColorOnScroll={{
@@ -77,13 +79,14 @@ function App() {
       
       <Switch>
           <Route exact path='/' component={Login} />
-          <Route  path='/sections' component={SectionBasics} />
-          
+        
+          <Route  path='/sections'component={SectionBasics} />
           <Route path='/donate' component={Donate} />
           <Route path='/volunteer' component={Volunt} />
           <Route path='/Shop' component={Prod} />
           <Route path='/about' component={AboutUs} />
           <Route path='/contact' component={ContactUs} />
+         
           <Route path='/login' component={Login} />
           <Route path='/signup' component={Signup} />
           <Route path='/payment' component={Payment} />
@@ -104,6 +107,7 @@ function App() {
     </Router>
   </>
   );
+
 }
 
 export default App;

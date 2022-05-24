@@ -96,7 +96,7 @@ const sendDetailsToServer = () => {
         </div>
         <div className='div-login'>
                  <div className='div-login-logo'>
-                     <Logo/>
+                     {/* <Logo/> */}
                  </div>
                  <div>
                      <form onSubmit = {handleSubmitClick}>
