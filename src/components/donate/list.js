@@ -154,7 +154,7 @@ export default function Donate(props) {
  <spam>vist our website :  </spam> &nbsp; <Button className={classes.btn1} href="https://www.parkshala.com/">Vist</Button> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <spam>Click here for donation :  </spam> &nbsp; 
  <Link to={'/payment'}>
- <Button className={classes.btn1} onClick={redirectToPayment} href="#" >
+ <Button className={classes.btn1} onClick={redirectToPayment} href="/payment" >
    
    Donate
 </Button>
@@ -211,7 +211,7 @@ export default function Donate(props) {
 
  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
- <spam>Click here for donation :  </spam> &nbsp; <Button onClick={redirectToPayment}  className={classes.btn1} href="#"> Donate </Button>
+ <spam>Click here for donation :  </spam> &nbsp; <Button onClick={redirectToPayment}  className={classes.btn1} href="/payment"> Donate </Button>
           </Typography>
     
         </CardContent>

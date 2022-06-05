@@ -54,7 +54,7 @@ export default function AboutUs() {
  
                 <p className={ classes.topleft}>
  
-           <b className={classes.colorcard}>Club Care</b> will help User(Donors and Volunteer) to find NGOs easily. Donor can simply register and login using credentials and they can access suitable NGOs for them and they can donate easily. People need to fill the details regarding Volunteer on approval of request. and people who are Volunteering are provided Certificate from the NGO.</p>
+           <b className={classes.colorcard}>Care club</b> will help User(Donors and Volunteer) to find NGOs easily. Donor can simply register and login using credentials and they can access suitable NGOs for them and they can donate easily. People need to fill the details regarding Volunteer on approval of request. and people who are Volunteering are provided Certificate from the NGO.</p>
 
           </div>
             
@@ -76,7 +76,7 @@ export default function AboutUs() {
          component="img"
 
          height="200"
-         image={require("../../assets/img/satoru-gojo.jpg").default}
+         image={require("../../assets/img/home/profile.jpg").default}
         alt="appearing"
          
       />
@@ -124,7 +124,7 @@ export default function AboutUs() {
              
              component="img"
              height="200"
-             image={require("../../assets/img/satoru-gojo.jpg").default}
+             image={require("../../assets/img/home/profile.jpg").default}
             alt="appearing"
              
           
@@ -172,7 +172,7 @@ export default function AboutUs() {
         
         component="img"
         height="200"
-        image={require("../../assets/img/satoru-gojo.jpg").default}
+        image={require("../../assets/img/home/profile.jpg").default}
        alt="appearing"
 
         />

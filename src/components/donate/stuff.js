@@ -115,6 +115,10 @@ export default function Stuff(props) {
 
 <div>
 
+<div>
+      <Donate/>
+</div>
+
 <div className={classes.sections}>
     <div className={classes.texthome}>
       <h2>
@@ -171,9 +175,7 @@ Our Volunteer will collect them for you and delivered them to an NGO that need i
 </div>
 </div>
       </div>
-      <div>
-      <Donate/>
-</div>
+
 </div>
 
    

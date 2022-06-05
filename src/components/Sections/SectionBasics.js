@@ -98,11 +98,9 @@ export default function SectionBasics() {
   return (
     <div className={classes.sections}>
       <div className={classes.texthome}>
-        <h2 >
-         HOME PAGE
-        </h2>
+        
       </div>
-      <br/>
+  
       <br/>
       <h2  className={classes.texthome}>Why Support NGOs</h2>
 <br/>
@@ -114,7 +112,7 @@ export default function SectionBasics() {
         component="img"
         height="140"
         image={require("../../assets/img/home/21.jpg").default}
-        alt="green iguana"
+        alt="loading"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

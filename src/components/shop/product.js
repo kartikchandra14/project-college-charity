@@ -71,7 +71,7 @@ export default function Prod(props) {
         />
         <CardContent>
         <h4 className={classNames(classes.colorcard,classes.texthome)}>BEST QUALITY</h4>
-        <p className={classes.colorcard}>The remaning profit of the product will donate to the NGO</p>
+        <p className={classes.colorcard}>We have genuine quality of material for our Buyers.</p>
         </CardContent>
         <CardActions>
         </CardActions>
@@ -84,7 +84,7 @@ export default function Prod(props) {
         />
         <CardContent>
         <h4 className={classNames(classes.colorcard,classes.texthome)}>FREE SHIPING</h4>
-        <p className={classes.colorcard}>The remaning profit of the product will donate to the NGO</p>
+        <p className={classes.colorcard}>We are providing free shiping to our Costumer at their door.</p>
         </CardContent>
         <CardActions>
         </CardActions>
